@@ -8,12 +8,12 @@ fi
 
 # Run training
 python yolov7/train.py \
-    --workers 4 \
+    --workers 24 \
     --device 0 \
-    --batch-size 8 \
+    --batch-size 32 \
     --data custom_config/data.yaml \
-    --img 640 640 \
+    --img 320 320 \
     --cfg yolov7/cfg/training/yolov7.yaml \
     --weights yolov7/yolov7_training.pt \
-    --name yolov7-custom \
+    --name yolov7-cctv-320 \
     --hyp yolov7/data/hyp.scratch.p5.yaml

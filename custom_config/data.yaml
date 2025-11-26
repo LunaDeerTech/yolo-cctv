@@ -10,5 +10,5 @@ names: ['person', 'face', 'cat', 'dog']
 
 # Download configuration
 download:
-  max_samples_train: 5000
-  max_samples_val: 500
+  max_samples_train: 20000
+  max_samples_val: 1000
